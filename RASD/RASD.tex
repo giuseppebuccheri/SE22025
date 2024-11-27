@@ -1,0 +1,48 @@
+\documentclass[11pt,twoside]{article}
+
+% Includi il file di configurazione
+\input{util/config}
+
+% Inizio del documento
+\begin{document}
+
+% Pagina del titolo
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[scale=0.5]{Images/PolimiLogo.png} \\[2cm]
+    \end{center}
+    
+    \begin{center}
+        {\color{bluepoli}\textbf{\Huge{Software Engineering 2 \\[1cm] Requirements Analysis and Specification Document \\[0.5cm] \textit{Students}\&\textit{Companies}}}} \\[5cm]
+        {\Large Authors: \\ Belfiore Mattia, \\ Benedetti Gabriele, \\ Buccheri Giuseppe.} \\[1cm]
+        {\large Academic Year: 2024 - 2025} \\[0.5cm]
+        {\large Version: 1.0} \\[0.5cm]
+        {\large Release date: 22/12/2024} \\[2cm]
+    \end{center}
+
+    \vfill
+    
+    \begin{flushright}
+        {\footnotesize \textcolor{Gray}{\emph{Copyright © 2024, Belfiore M., Benedetti G., Buccheri G. – All rights reserved.}}}
+    \end{flushright}
+\end{titlepage}
+
+% Sommario
+\clearpage
+\tableofcontents
+\newpage
+
+% Inclusione delle sezioni
+\input{Chapters/introduction}
+\input{Chapters/overall_description}
+\input{Chapters/specific_requirements}
+\input{Chapters/alloy}
+\input{Chapters/effort}
+
+% Sezione References
+\section{References}
+\subsection{References}
+\subsection{Used Tools}
+
+% Fine del documento
+\end{document}
