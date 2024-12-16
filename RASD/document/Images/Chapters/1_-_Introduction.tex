@@ -1,0 +1,210 @@
+In the real world, the process of finding suitable candidates for internships is often a complex and time-consuming task for companies, while university students face significant challenges in identifying opportunities that align with their skills, interests, and career aspirations. Companies must consider numerous applications, many of which may not meet their requirements, and produce internship descriptions that attract the right talent. However, students are often left to navigate partial information sources, leading to inefficiencies and missed opportunities.
+This disparity between the supply and demand for internships is caused by the lack of "ad hoc" tools to support efficient matchmaking. The success of an internship is often guaranteed by factors such as the relevance of candidates' skills to the offered projects, the clarity of internship descriptions, and the availability of resources such as mentorship and training. Without a straight process, companies may struggle to identify candidates who fit their needs, and students may find it difficult to show their potential.
+These challenges highlight the need for a unified platform that bridges the gap between students and companies, providing a mutually beneficial ecosystem where both parties can connect, evaluate, and collaborate. S\&C comes as a solution to address these pain points, offering a structured approach to simplifying and optimizing the internship process for all involved stakeholders.
+\newpage
+
+\section{Purpose}
+\label{sec:purpose}%
+
+\subsection{Goals}
+\label{subsec:goals}%
+\newcounter{g}
+\setcounter{g}{1}
+\newcommand{\cg}{\theg\stepcounter{g}}
+
+Below there is a table that lists all the goals of the \verb|S&C| system:
+\begin{center}
+    \renewcommand{\arraystretch}{2}
+    \begin{longtable}{ l p{0.8\linewidth} } 
+        \hline
+        \textbf{ID} & \textbf{Description}                                                                   \\
+        \hline
+        %%todo, mettere insieme 1-3 e 1-2
+        G\cg  & Allows Companies to advertise their internship offers to find the most suitable students, with the help of recommendation \\ \hline
+        G\cg  & Allows Students to look for internships based on their needs and find the most suitable for them, with the help of recommendation \\ \hline
+        G\cg  & Supports selection process by helping manage interviews and also finalize the selections \\ \hline
+        G\cg  & Provides suggestions to companies regarding how to make their offers more appealing for students \\ \hline
+        G\cg  & Provides suggestions to students how to make their CVs more appealing for companies \\ \hline
+        G\cg  & Allows stakeholders to monitor the progress of internships, report issues, and track outcomes \\ \hline
+        G\cg  & Allows Universities to monitor the situation of ongoing internships and interrupt them when necessary \\ \hline
+        \caption{Goals.}
+        \label{tab:goals_tab}%
+    \end{longtable}
+\end{center}
+
+\newpage
+
+
+\section{Scope}
+\label{sec:scope}%
+The S\&C platform serves as a comprehensive system for matching students with internships and supporting related workflows. It acts as a hub for collaboration and interaction among three primary user groups: students, companies, and universities. Students are the primary user group, using the platform to create detailed profiles, upload and maintain updated CVs, search for internships manually, or receive personalized recommendations that better suit their academic background, skills, and preferences. They can also apply to internships, participate in interviews with the help of the platform, and finally provide feedback on their experiences, thereby contributing to the platform's constant improvement.
+Companies utilize S\&C to manage their internship offerings and streamline recruitment. They can advertise internships with comprehensive descriptions, specifying required skills and qualifications, and benefit from a recommendation system that identifies suitable candidates. Companies can also review applications, shortlist applicants and schedule interviews within the platform. For post-selection, they can provide feedback on students' performance, helping refine the matching algorithms, and contributing to system insights.
+Universities play a crucial supervisory role, ensuring the integrity and success of internships. They monitor ongoing internships, address complaints raised by students or companies, and analyze trends to enhance their internship programs. In addition, universities use the platform to ensure compliance with educational and legal standards, providing a secure and supportive environment for all parties involved.
+Through the integration of these interactions, the S\&C platform simplifies the internship process while creating a cooperative environment that mutually supports students, companies, and universities.
+
+\subsection{World phenomena}
+\label{subsec:world_phenomena}%
+\newcounter{wp}
+\setcounter{wp}{1}
+\newcommand{\cwp}{\thewp\stepcounter{wp}}
+\begin{center}
+    \renewcommand{\arraystretch}{2}
+    \begin{longtable}{ l p{0.8\linewidth} } 
+        \hline
+        \textbf{ID} & \textbf{Description}                                                \\
+        \hline
+        WP\cwp      & A student searches for available internships to match their career interests \\
+        \hline
+        WP\cwp      & A student evaluates internships to find those that align with their personal goals and skill set \\
+        \hline
+        WP\cwp      & A student creates or updates their CVs, reflecting their real-world skills and experiences \\
+        \hline
+        WP\cwp      & A student decides to apply for an internship \\
+        \hline
+        WP\cwp      & A company decides to offer a new internship, defining its requirements, tasks, and potential benefits \\
+        \hline
+        WP\cwp      & A company evaluates students and decides to accept or reject them based on their qualifications and skills \\
+        \hline
+        WP\cwp      & A company conducts interviews to check if students satisfies requirements for its internship and collects responses from structured questionnaires \\
+        \hline
+        WP\cwp      & Internships are conducted in the real world, with students actively working on company-assigned projects \\
+        \hline
+        WP\cwp      & A student or a company identifies and reports issues as mismatches, conflicts, or unmet expectations during the internship \\
+        \hline
+        WP\cwp      & A student or a company provides feedback on their internship experience, including tasks performed and learning outcomes \\
+        \hline
+        WP\cwp      & A university evaluates students and companies complaints and decides to interrupt or not an internship complaints \\
+        \hline
+        \caption{World Phenomena.}
+        \label{tab:worldph_tab}%
+    \end{longtable}
+\end{center}
+
+\clearpage
+
+\subsection{Shared phenomena}
+\label{subsec:shared_phenomena}%
+\newcounter{sp}
+\setcounter{sp}{1}
+\newcommand{\csp} {\thesp\stepcounter{sp}}
+\begin{center}
+\renewcommand{\arraystretch}{2}
+
+\textbf{Shared Phenomena - World Controlled}
+
+\begin{longtable}{ l p{0.8\linewidth} }
+    \hline
+    \textbf{ID} & \textbf{Description} \\ 
+    \hline
+    SP\csp & A user signs up to the system or logs in if already registered \\ 
+    \hline
+    SP\csp & A student logs in \\ 
+    \hline
+    SP\csp & A company logs in \\ 
+    \hline
+    SP\csp & An user activates a student account uploading their CV, putting his personal and academic information and selecting his career objectives \\ 
+    \hline
+    SP\csp & An user activates a company account uploading its information like full name, address, email and phone number \\ 
+    \hline
+    SP\csp & A student searches for an internships \\
+    \hline
+    SP\csp & A student searches for an internships filtering them by their needs \\ 
+    \hline
+    SP\csp & A student applies for an internship offer \\ 
+    \hline
+    SP\csp & A student writes and sends problems or complaints about an ongoing internship \\ 
+    \hline
+    SP\csp & A student writes and sends feedback and suggestions on how to improve a recently completed internship \\ 
+    \hline
+    SP\csp & A company publishes and manages internship offers \\ 
+    \hline
+    SP\csp & A company accepts an application arranging the interview scheduling time with student \\ 
+    \hline
+    SP\csp & A company contacts a student arranging the interview scheduling time \\ 
+    \hline
+    SP\csp & A company writes and sends problems or complaints about an ongoing internship \\ 
+    \hline
+    SP\csp & A company writes and sends feedback and suggestions on how to improve a recently completed internship \\ 
+    \hline
+    SP\csp & A university interrupts an ongoing internship due to relevant complaints \\ 
+    \hline
+    \caption{World controlled shared phenomena.}
+    \label{tab:sharedph_world_tab}%
+\end{longtable}
+
+\textbf{Shared Phenomena - Machine Controlled}
+
+\begin{longtable}{ l p{0.8\linewidth} }
+    \hline
+    \textbf{ID} & \textbf{Description} \\ 
+    \hline
+    SP\csp & The system provides personalized internship recommendations to students, based on their skills, experiences, and preferences \\ 
+    \hline
+    SP\csp & The system provides personalized candidate recommendations to companies, based on their internship requirements and benefits offered \\ 
+    \hline
+    SP\csp & The system supports companies by organizing interview schedules and managing structured questionnaire responses from candidates \\ 
+    \hline
+    SP\csp & The system offers personalized suggestions to students on how to improve their CVs for better experience in it \\ 
+    \hline
+    SP\csp & The system offers personalized suggestions to companies on how to improve their job postings to attract more qualified candidates \\ 
+    \hline 
+    SP\csp & The system notifies students about new internship opportunities that match their skills and preferences \\ 
+    \hline
+    SP\csp & The system notifies companies when a highly suitable student registers or becomes available for their posted internships \\
+    \hline 
+    SP\csp & The system tracks and records the complaints of ongoing internships to assist university with issue resolution if necessary \\
+    \hline
+    SP\csp & The system collects feedback from students and companies to improve its recommendation algorithms and platform functionalities \\ 
+    \hline 
+    \caption{Machine controlled shared phenomena.}
+    \label{tab:sharedph_machine_tab}%
+\end{longtable}
+
+\end{center}
+
+\section{Definition, Acronyms, Abbreviations}
+\label{sec:definition_acronyms_abbreviations}%
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{ |l|l| }
+            \hline
+            \textbf{Acronyms} & \textbf{Definition}                              \\
+            \hline
+            RASD & Requirements Analysis and Specification Document \\ \hline
+            S\&C & Students\&Companies \\ \hline
+            CV & Curriculum Vitae \\ \hline
+        \end{tabular}
+        \caption{Acronyms used in the document.}
+        \label{tab:acronyms}%
+    \end{center}
+\end{table}
+
+
+\section{Revision history}
+\label{sec:revision_history}%
+ \begin{itemize}
+     \item Version 1.0 - 22/12/2024
+ \end{itemize}
+
+\section{Reference Documents}
+\label{sec:reference_documents}%
+\begin{itemize}
+    \item Specification Document : "Assignment RDD AY 2024-2025"
+    \item "CreatingRASD" (lecture slides)
+\end{itemize}
+
+
+\section{Document Structure}
+\label{sec:document_structure}%
+\begin{itemize}
+    \item \textbf{Introduction}: The first chapter of this document is generic introduction to the goals, the phenomena and the scope of the system. It provides simple but exhaustive information about what the RASD document is going to explain in the following sections.
+    \item \textbf{Overall Description}: A general description of the product to be,its requirements and the scenarios that might occur.
+    \item \textbf{Specific Requirements:} All software requirements are explained using scenarios,
+            use-case diagrams and activity diagrams. It focuses on the specific requirements and provides a more
+            detailed analysis of external interface requirements, functional requirements and performance ones.
+    \item \textbf{Formal Analysis Using Alloy:} This section includes Alloy code that describes the
+            model and shows its soundness and correctness.
+    \item \textbf{Effort Spent:} Effort spent by all team members shown as the list of all the activities
+            done during the realization of this document
+    \item \textbf{References:} References to documents that this project was developed upon.
+\end{itemize}
