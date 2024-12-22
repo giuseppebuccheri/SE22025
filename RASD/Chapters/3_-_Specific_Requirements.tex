@@ -3,18 +3,17 @@
 
 \subsection{User Interfaces}
 \label{subsec:user_interfaces}%
-The platform will provide have different interfaces for each one of its three primary user groups: students, companies, and universities. Each interface will be role-specific in order to facilitate interactions. The student interface will include a dashboard summarizing recommended internships, application statuses, and interview schedules; there will be also a profile editor for updating academic details, skills, and preferences; every student will be provided a search interface with filters (e.g., location, skills, duration) to browse available internships. The company interface will feature tools to create, edit, and manage internship postings; a dashboard to view applications, candidates lists  and scheduled interviews. The university interface will instead include a dashboard displaying active internships, student feedback and complaint statuses; the university interface is equipped with tools to analyze trends and generate reports on internship outcomes as well as a complaint resolution module to address issues raised by students or companies.
+The platform will provide different interfaces for each one of its three primary user groups: students, companies, and universities. Each interface will be role-specific in order to facilitate interactions. The student interface will include a dashboard summarizing recommended internships, application statuses, and interview schedules; there will be also a profile editor for updating academic details, skills, and preferences; every student will be provided a search interface with filters (e.g., location, skills, duration) to browse available internships. The company interface will feature tools to create, edit, and manage internship postings; a dashboard to view applications, candidates lists  and scheduled interviews. The university interface will instead include a dashboard displaying active internships, student feedback and complaint statuses; the university interface is equipped with tools to analyze trends and generate reports on internship outcomes as well as a complaint resolution module to address issues raised by students or companies.
 
 \subsection{Hardware Interfaces}
 \label{subsec:hardware_interfaces}%
-The platform is a web app; this means that it does not require any specific hardware interface except for a computer or any other device with web browser.  
+S\&C system consists of both a mobile application and a Web App, making it highly accessible and versatile. So the platform only requires a smartphone or a computer with an internet connection. It does not require any specific hardware interface. This ensures that the system is easy to use and widely available.
 \subsection{Software Interfaces}
 \label{subsec:software_interfaces}%
 In order to work correctly, the system will need to integrate with a few software components; here they are listed in detail:
 \begin{itemize}
     \item \textbf{Database Systems:} To store user profiles, internship details, application records, and feedback securely.
     \item \textbf{Email and Notification APIs:} To send updates and reminders to users about critical events such as deadlines or feedback.
-    \item \textbf{Video Conferencing Tools:} For virtual interviews between students and companies.
     \item \textbf{Statistical Analysis Tools:} To extract meaningful data from user interactions and feedback.
 \end{itemize}
  
@@ -132,6 +131,10 @@ The platform will support secure communication protocols to facilitate data exch
         \hline
         \ch      & S\&C system periodically updates internship recommendations based on new data from Students and Companies.\\ 
         \hline
+        \ch      & The S\&C system provides Students suggestions on creating an effective CV, enhancing their chances of getting a match and receiving a positive evaluation during the company selection process.\\ 
+        \hline
+        \ch      & The S\&C system provides Companies suggestions on creating an effective post for an internship, enhancing their chances of getting a match.\\ 
+        \hline
         \caption{Requirements}
         \label{tab:worldph_tab}%
     \end{longtable}
@@ -142,7 +145,7 @@ The platform will support secure communication protocols to facilitate data exch
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/use case diagrams/UNREGISTERED_USER.png}
+    \includegraphics[width=0.8\linewidth]{Images/use case diagrams/UNREGISTERED_USER.png}
     \caption{Unregistered user use case diagram}
     \label{fig:enter-label}
 \end{figure}
@@ -163,7 +166,7 @@ The platform will support secure communication protocols to facilitate data exch
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/use case diagrams/UNIVERSITY.png}
+    \includegraphics[width=0.8\linewidth]{Images/use case diagrams/UNIVERSITY.png}
     \caption{University use case diagram}
     \label{fig:enter-label}
 \end{figure}
@@ -189,7 +192,7 @@ The platform will support secure communication protocols to facilitate data exch
         & 4.\ The user presses the "Sign Up" button to submit the registration form. \\ 
         & 5.\ The S\&C system sends a confirmation email to the provided email address. \\ 
         & 6.\ The user completes the registration by clicking the confirmation link in the email. \\ \hline 
-        Exit Condition & The user's account is successfully created, and they can log into the system. \\ \hline 
+        Exit Condition & The user's account is successfully created and they can log into the system. \\ \hline 
         Exceptions & 1.\ One or more mandatory fields are empty. \\ 
         & 2.\ An account with the same email already exists. \\ 
         & 3.\ The user has not checked the "Terms \& Conditions" or "Privacy Policy" boxes. \\ \hline 
@@ -241,21 +244,21 @@ The platform will support secure communication protocols to facilitate data exch
         \hline 
         Actor & Registered User \\ \hline 
         Entry Condition & The user wants to upgrade their account to a student account to unlock full access to the platform's features. \\ \hline 
-        Event Flow & 1.\ The user presses the "Unlock full experience" button on the homepage. \\ 
+        Event Flow & 1.\ The user presses the upgrade account button on the homepage. \\ 
         & 2.\ The user selects the "Student Account" option. \\  
         & 3.\ The user fills out all mandatory fields (name, surname, academic email, phone number, postal code). \\ 
         & 4.\ The user uploads their CV in PDF format. \\ 
         & 5.\ The user selects their internship goals from a provided checklist. \\ 
         & 6.\ The user presses the "Upgrade Account" button. \\ 
         & 7.\ The system validates the entered information and uploaded CV. \\ 
-        & 8.\ If the information is valid, the system sends a confirmation email to verify the academic email's validity. \\ 
+        & 8.\ If the information is valid, the system sends a confirmation email to verify the academic email address' validity. \\ 
         & 9.\ The user clicks on the confirmation link in the email to complete the activation process. \\ \hline 
         Exit Condition & The user's account is successfully upgraded to a student account, granting access to additional features. \\ \hline 
         Exceptions & 1.\ One or more mandatory fields are left empty. \\ 
         & 2.\ The uploaded CV is not in the correct PDF format. \\ 
         & 3.\ The CV file is missing during the upload process. \\ 
         & 4.\ The entered information fails validation checks. \\
-        & 5.\ An account with the provided academic email already exists. \\ \hline 
+        & 5.\ An account with the provided academic email address already exists. \\ \hline 
         \caption{User upgrades their account to a Student Account} 
         \label{tab:student_activation_uc} 
     \end{longtable} 
@@ -263,7 +266,7 @@ The platform will support secure communication protocols to facilitate data exch
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/Sequence diagrams/Student account attivation.png}
+    \includegraphics[width=1\linewidth]{Images/Sequence diagrams/Student account Attivation.png}
     \caption{Student account activation sequence diagram}
     \label{fig:enter-label}
 \end{figure}
@@ -320,12 +323,14 @@ The platform will support secure communication protocols to facilitate data exch
     \begin{longtable}{ l p{0.8\linewidth} } 
         \hline
         Actor & Student \\ \hline
-        Entry condition & Student clicks on the internship post.\\ \hline
-        Event Flow       & 1.\ Student enters S\&C system logging in.\\ \hline
-        Exit condition & S\&C system redirects shows student their personal recommended internships. \\ \hline
+        Entry condition & The student wants to view all the details about an internship they find interesting.\\ \hline
+        Event Flow & 1.\ Student enters S\&C system logging in.\\
+        & 2.\ The student searches through the list of available internships, aiming to find one that matches their interests and preferences.\\
+        & 3.\ Student clicks on its box.\\ \hline
+        Exit condition & The S\&C system displays all the details of the selected internship. \\ \hline
         Exceptions  & System cannot elaborate available internships.
         \\ \hline
-        \caption{Student views offers.}
+        \caption{Student views offer details.}
         \label{tab:goals_tab}%
     \end{longtable}
 \end{center}
@@ -511,6 +516,8 @@ The platform will support secure communication protocols to facilitate data exch
     \label{fig:enter-label}
 \end{figure}
 
+\newpage
+
 \textbf{UC\cuc\  - Student or Company submits a complaint about an ongoing internship.}
 
 \begin{center} 
@@ -559,6 +566,8 @@ The platform will support secure communication protocols to facilitate data exch
     \label{fig:enter-label}
 \end{figure}
 
+\newpage
+
 \textbf{UC\cuc\  - University decides to interrupt an internship due to relevant complaints.}
 
 \begin{center} 
@@ -604,6 +613,7 @@ The platform will support secure communication protocols to facilitate data exch
         \item R29: S\&C system allows Companies to delete an internship's post.
         \item R30: S\&C system allows Companies to identify the most suitable students on the platform for their internship posts, even if the students have not applied.
         \item R47: S\&C system periodically updates internship recommendations based on new data from Students and Companies.
+        \item R49: S\&C system provides Students suggestions on creating an effective CV, enhancing their chances of getting a match and receiving a positive evaluation during the company selection process.
     \end{itemize}
     \item \textbf{G2 - Allows Students to look for internships based on their needs and find the most suitable for them, with the help of recommendation.}
     \begin{itemize}
@@ -620,8 +630,9 @@ The platform will support secure communication protocols to facilitate data exch
         \item R33: S\&C system allows Companies to receive notification when a new student with a high matching score has applied.
         \item R46: S\&C system improves recommendation accuracy by considering user feedback on previous internships.
         \item R47: S\&C system periodically updates internship recommendations based on new data from Students and Companies.
+        \item R48: S\&C system provides Students suggestions on creating an effective CV,enhancing their chances of getting a match and receiving a positive evaluation during the company selection process.
     \end{itemize}
-    \item \textbf{G3 - Supports selection process by helping manage interviews and also finalize the selections.}
+    \item \textbf{G3 - Supports selection process by helping to manage interviews and also finalize the selections.}
     \begin{itemize}
         \item R17: S\&C system allows Students to apply for an internship.
         \item R18: S\&C system allows Students to view sent applications.
@@ -629,6 +640,7 @@ The platform will support secure communication protocols to facilitate data exch
         \item R20: S\&C system allows Students to withdraw a sent application.
         \item R21: S\&C system allows Students to confirm their participation of a scheduled interview via a notification interface.
         \item R22: S\&C system allows Students to decline an interview offer via a notification interface.
+        \item R24: S\&C system allows Students to review the agreements of an internship before accepting.
         \item R31: S\&C system allows Companies to review the applications for an internship.
         \item R32: S\&C system allows Companies to view internship's applications ordered by the best match.
         \item R34: S\&C system allows Companies to propose a date to a student to schedule an interview.
@@ -640,11 +652,14 @@ The platform will support secure communication protocols to facilitate data exch
     \begin{itemize}
         \item R27: S\&C system allows Companies to post internship offers by providing detailed information.
         \item R46: S\&C system improves recommendation accuracy by considering user feedback on previous internships.
+        \item R49: S\&C system provides Companies suggestions on creating an effective post for an internship, enhancing their chances of getting a match.
     \end{itemize}
-    \item \textbf{G5 - Provides suggestions to students how to make their CVs more appealing for companies.}
+    \item \textbf{G5 - Provides suggestions to students ho w to make their CVs more appealing for companies.}
     \begin{itemize}
+        \item R3: S\&C system allows registered users to login.
+        \item R4: S\&C system allows registered users to edit their account details.
         \item R8: S\&C system allows registered users to verify their current academic status by validating their institutional email address.
-        \item R24: S\&C system allows Students to review the agreements of an internship before accepting.
+        \item R48: S\&C system provides Students suggestions on creating an effective CV,enhancing their chances of getting a match and receiving a positive evaluation during the company selection process.
     \end{itemize}
     \item \textbf{G6 - Allows stakeholders to monitor the progress of internships, report issues, and track outcomes.}
     \begin{itemize}
@@ -678,8 +693,8 @@ The platform will support secure communication protocols to facilitate data exch
         \hline
             R1  & \checkmark &   &   &   &   &   &   \\ \hline
             R2  & \checkmark &   &   &   &   &   &   \\ \hline
-            R3  &   &   &   &   &   &   & \checkmark \\ \hline
-            R4  &   & \checkmark &   &   &   &   &   \\ \hline
+            R3  &   &   &   &   &  \checkmark &   & \checkmark \\ \hline
+            R4  &   & \checkmark &   &   & \checkmark  &   &   \\ \hline
             R5  &   &   &   &   &   & \checkmark &   \\ \hline
             R6  & \checkmark &   &   &   &   &   &   \\ \hline
             R7  &   & \checkmark &   &   &   &   &   \\ \hline
@@ -699,7 +714,7 @@ The platform will support secure communication protocols to facilitate data exch
             R21 &   &   & \checkmark &   &   &   &   \\ \hline
             R22 &   &   & \checkmark &   &   &   &   \\ \hline
             R23 &   &   &   &   &   & \checkmark &   \\ \hline
-            R24 &   &   &   &   & \checkmark &   &   \\ \hline
+            R24 &   &   &  \checkmark &   &  &   &   \\ \hline
             R25 &   &   &   &   &   &   & \checkmark \\ \hline
             R26 &   &   &   &   &   & \checkmark &   \\ \hline
             R27 & \checkmark &   &   & \checkmark &   &   &   \\ \hline
@@ -723,6 +738,8 @@ The platform will support secure communication protocols to facilitate data exch
             R45 &   &   &   &   &   &   & \checkmark \\ \hline
             R46 &   & \checkmark &   & \checkmark &   &   &   \\ \hline
             R47 & \checkmark & \checkmark &   &   &   &   &   \\ \hline
+            R48 &   & \checkmark &   &   & \checkmark &   &   \\ \hline
+            R49 & \checkmark &  &   & \checkmark  &   &   &   \\ \hline
         \caption{ Traceability Matrix for Goals and Requirements}
     \end{longtable}
 \label{tab:mapping_requirements}
@@ -749,7 +766,7 @@ Here we have a short list of the hardware features that a user should have to us
  
 \subsection{Any Other Constraint}
 \label{subsec: hardware_limitations}%
-In a way, the system ought to give top priority to how user-friendly it is, providing interfaces that feel easy to learn for students, companies, and universities alike for things like uploading resumes, handling internships, and sorting out complaints. It must integrate efficiently with third-party tools (e.g., video conferencing softwares) and ensure compatibility with APIs that support future features (e.g. AI-based recommendations).  The architecture must be as scalable as the platform itself increases in the number of users. The platform should also be integrated with specific tools in order to make the feedback and complaint system robust.
+In a way, the system ought to give top priority to how user-friendly it is, providing interfaces that feel easy to learn for students, companies, and universities alike for things like uploading resumes, handling internships, and sorting out complaints. It ensures compatibility with APIs that support future features (e.g. AI-based recommendations).  The architecture must be as scalable as the platform itself increases in the number of users. The platform should also be integrated with specific tools in order to make the feedback and complaint system robust.
 \section{Software system attributes}
 \label{sec:performance_requirements}%
 
@@ -758,7 +775,7 @@ In a way, the system ought to give top priority to how user-friendly it is, prov
 The system has to be reliable since it will have to run without stopping for a long period of time. To ensure this feature the platform must have some sort of replication and consistency policy to avoid system crash. In addition to this it is a good practice to have offline backups of the system for recovering information in case of data loss. 
 \subsection{Availability}
 \label{subsec: availability}%
-The system must guarantee an availability of 99\% to support its users effectively, especially during peak usage periods like internship deadlines or videoconferencing sessions. To achieve this, single points of failure must be avoided and load balancing techniques should be used. 
+The system must guarantee an availability of 99\% to support its users effectively, especially during peak usage periods like internship deadlines. To achieve this, single points of failure must be avoided and load balancing techniques should be used. 
 \subsection{Security}
 \label{subsec: security }%
 User data, including personal information and CVs, must be protected using encryption methods for stored data and secure transmission protocols. The platform must implement measures to prevent unauthorized access and ensure the integrity and confidentiality of user information. 
@@ -767,4 +784,4 @@ User data, including personal information and CVs, must be protected using encry
 The system must be easily maintainable with well-documented code and routine testing procedures. At least 75\% of the code, excluding the UI, must have test coverage to facilitate debugging and future development and expansion of the platform. 
 \subsection{Portability}
 \label{subsec: portability}%
-As a web-based application, the platform must work correctly on various devices and browsers, such as Chrome, Firefox, and Safari. Compatibility with both desktop and mobile devices ensures usability for a wide range of users. 
+As a platform that includes both a web application and a mobile application, the system must function correctly across various devices and environments. The web application should be compatible with major browsers, such as Chrome, Firefox, and Safari, ensuring accessibility on desktop and mobile browsers alike. Additionally, the mobile application must provide a seamless user experience on both iOS and Android devices. This compatibility guarantees usability for a wide range of users, regardless of their chosen device or access method. 
