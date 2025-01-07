@@ -1,0 +1,57 @@
+\section{Development Process}
+The four levels that make up the system can be implemented in parallel and integrated at the
+end of development together with the External Systems. This choice is motivated by the 
+different nature of the various tiers and by the need to speed up the development process to 
+solve the problems associated with gathering applications and internships information. The 
+business logic layer is the most critical and difficult to implement, and the following sections 
+focus on its development.
+A good approach would be \textbf{Bottom-Up} since starting with the primitive components provided by the developing language and building the system until all the functionalities and properties are created and implemented. Every built element can be used can be then used to build more complex and powerful elements until the whole system is completed.
+
+\section{Implementation Plan}
+This section outlines the implementation strategies employed to develop, integrate, and test the various components. The approach combines the advantages of bottom-up and threaded strategies.
+The threaded strategy is effective because it makes progress visible to users and stakeholders. While it reduces the need for drivers, it does introduce greater complexity in the integration process.
+The top-down methodology will be applied by first creating a basic framework and incrementally adding more complex functionalities as validated thread units. 
+This strategy enables different teams to work independently on specific tasks, facilitating parallel development. Once validated, each unit will be integrated into the overall software architecture.
+\begin{itemize}
+    \item Login, Registration and Profile Manager (LRC) : This module is necessary for the correct configuration of the S\&C system allowing all the other components to be stored or used in the correct way.
+    \item Internship Manager (I) : The implementation of this module should follow the "Login, Registration and Profile Manager" one. Essential to keep everything in order.
+    \item Matchmaking Manager (M) : The development of this module is critical since all the computation regarding what need to be shown to the users depends on this. Despite this it heavily relies on communicating with the Database and with the previous managers.
+    \item Complaint and Feedback Manager (CF) : This modules add an additional function that is easier to implement than the notification manager.
+    \item Notification Manager (N) : This component, despite adding only marginal or additional functions, is quite complex to implement correctly therefore its construction can be delayed till the entire system is built in order to assess its functionality when all other components are working.
+    \item Data Manager (DB) : All the components of the application server rely on this element in order to communicate with the Database. Its of crucial importance that this model is well constructed.
+\end{itemize}
+With all this information about the single components we can create an order that should simplify the implementations of the various elements.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|} \hline 
+         Component& Implementation Complexity\\ \hline 
+         LRC& Medium\\ \hline 
+         I& Medium\\ \hline 
+         M& High\\ \hline 
+         CF& Medium\\ \hline 
+         N& High\\ \hline
+         DB& Low\\ \hline
+    \end{tabular}
+\caption{Components implementation complexity.}
+\end{table}
+
+\section{System testing}
+System testing aims to ensure the S\&C platform delivers a reliable, secure, and efficient experience for all involved users: students, companies, and universities. It also verifies compliance with functional and nonfunctional requirements, particularly by focusing on the platform's key functionalities, such as matchmaking, recommendations, feedback collection, and complaint management. 
+
+\begin{itemize}
+    \item Functional Testing: When performing this kind of test it is important to verify if the
+functional requirements are fulfilled or not. The most effective way to achieve this is to test the software as described in the use cases in the RASD document and verify that everything works as expected.
+    \item Performance Testing: The main objective of this type of test is to detect bottlenecks that could affect response time, efficiency and throughput. It is also possible to detect hardware/network issues in inefficient algorithms or find optimization possibilities. To perform this type of verification it’s necessary to load the
+system with an expected heavy workload, then measure and compare the performance with the expected one and finally identify optimization possibilities.
+\item Usability Testing: it is a method of testing the features of a website, app, or other digital product by observing real users as they attempt to complete tasks on it.
+\item Load Testing: With load testing we can expose some bugs such as memory leaks, buffer overflow or memory mismanagement. This type of tests is useful for identifying the upper bound of the components used. To perform this kind of tests it’s mandatory to look at how the system behaves under increasing workload until it can easily support said workload for a defined amount of time.
+\item Stress Testing: This test aims at verifying if the system recovers correctly and efficiently after failure. 
+\end{itemize}
+
+\section{Additional Specifications on Testing}
+During system development, it is of extreme importance to gather continuous feedback from both users and stakeholders. This feedback should be sought every time a new feature is implemented in order to find problems or features that don't satisfy either groups and that could damage the usability or profitability of the software/platform.
+Additionally, during the alpha testing phase, it is essential to assess the satisfaction levels of participants selected. To achieve this, it is helpful to involve professionals, such as psychologists, who have experience in designing appropriate questions in order to obtain meaningful feedback from testers. The alpha testing phase plays a critical role in identifying malfunctions and issues prior to beta testing.
+Beta testing, in turn, allows real users to interact with the product in a production environment, helping to uncover any bugs or issues before the product's general release. Testing remains important even after the application is released, as logs generated after release and during use should be sent to developers. These logs provide valuable data for debugging and improving the application.
+
+ 
