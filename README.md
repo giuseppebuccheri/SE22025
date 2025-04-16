@@ -1,5 +1,4 @@
-# BelfioreBenedettiBuccheri
-
-OverLeaf shared projects: 
-- Rasd: https://www.overleaf.com/read/bdkttvvthcnw#edbff8
-- DD: https://www.overleaf.com/read/dzfcbkqpwkpr#b236ac
+# Progetto Software engineering 2
+Anno Accademico 2025/2025
+Corso di Laurea: Ingegneria Informatica
+Politecnico di Milano
